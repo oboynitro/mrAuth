@@ -1,0 +1,18 @@
+{
+    "name": "oboynitro/mr-auth",
+    "description": "basic authentcation library for php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "oboynitro",
+            "email": "oboy.nitro1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Oboynitro\\MrAuth\\": "src/"
+        }
+    }
+}
