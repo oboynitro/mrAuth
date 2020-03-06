@@ -52,3 +52,10 @@ h1{
     padding: .5rem;
     text-align: center;
 }
+
+.success {
+    color: #000;
+    background-color: chartreuse;
+    padding: .5rem;
+    text-align: center;
+}

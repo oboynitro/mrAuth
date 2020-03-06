@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (isset($_SESSION['register']['error']))
+{
+    session_unset();
+}
 ?>
 
 <html lang="en-us">
@@ -11,6 +15,8 @@ session_start();
 <div class="login_wrapper">
     <?php if (isset($_SESSION['error'])): ?>
         <h3 class="error"><?php echo($_SESSION['error']); ?></h3>
+    <?php elseif (isset($_SESSION['success'])): ?>
+        <h3 class="success"><?php echo($_SESSION['success']); ?></h3>
     <?php endif; ?>
     <h1>Please Login here!</h1>
     <form action="core/auth/processLogin.php" method="POST">
