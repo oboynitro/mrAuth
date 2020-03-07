@@ -2,7 +2,7 @@
 
 namespace Oboynitro\MrAuth\Core\Auth;
 use Oboynitro\MrAuth\Core\DB;
-require '../DB.php';
+
 session_start();
 
 if (isset($_POST['submit']))
